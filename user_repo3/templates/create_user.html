@@ -1,0 +1,688 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+      
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+      
+
+      <title>User Registration Api</title>
+
+      
+        
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+        
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+      
+
+    
+  </head>
+
+  
+  <body class="">
+
+    <div class="wrapper">
+      
+        <div class="navbar navbar-static-top navbar-inverse">
+          <div class="container">
+            <span>
+              
+                <a class='navbar-brand' rel="nofollow" href='http://www.django-rest-framework.org'>
+                    Django REST framework
+                </a>
+              
+            </span>
+            <ul class="nav navbar-nav pull-right">
+              
+                
+                  <li><a href='/api-auth/v0/login/?next=/user/auth/create-user/v0/'>Log in</a></li>
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <div class="container">
+        
+          <ul class="breadcrumb">
+            
+              
+                <li class="active"><a href="/user/auth/create-user/v0/">User Registration Api</a></li>
+              
+            
+          </ul>
+        
+
+        <!-- Content -->
+        <div id="content">
+
+          
+
+          
+            <form class="button-form" action="/user/auth/create-user/v0/" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the User Registration Api resource">OPTIONS</button>
+            </form>
+          
+
+          
+
+          
+
+            <div class="content-main">
+              <div class="page-header">
+                <h1>User Registration Api</h1>
+              </div>
+              <div style="float:left">
+                
+                  <p>Endpoint for user registration.</p>
+                
+              </div>
+
+              
+
+              <div class="request-info" style="clear: both" >
+                <pre class="prettyprint"><b>GET</b> /user/auth/create-user/v0/</pre>
+              </div>
+
+              <div class="response-info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 405 Method Not Allowed</b>
+<b>Allow:</b> <span class="lit">POST, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>{
+    &quot;detail&quot;: &quot;Method \&quot;GET\&quot; not allowed.&quot;
+}</pre>
+              </div>
+            </div>
+
+            
+              
+                <div class="tabbable">
+                  
+                    <ul class="nav nav-tabs form-switcher">
+                      <li>
+                        <a name='html-tab' href="#post-object-form" data-toggle="tab">HTML form</a>
+                      </li>
+                      <li>
+                        <a name='raw-tab' href="#post-generic-content-form" data-toggle="tab">Raw data</a>
+                      </li>
+                    </ul>
+                  
+
+                  <div class="well tab-content">
+                    
+                      <div class="tab-pane" id="post-object-form">
+                        
+                          <form action="/user/auth/create-user/v0/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate>
+                            <fieldset>
+                              <input type='hidden' name='csrfmiddlewaretoken' value='oIhnLhEJLed7AEXrVIBn10PVOHByR6grwOpPIYogVHhF84RqU7DaEsyzUAxWI5m1' />
+                              
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Username
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="username" class="form-control" type="text"   >
+
+    
+
+    
+      <span class="help-block">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Email Address
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="email" class="form-control" type="email"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Password
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="password" class="form-control" type="password"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Confirm Password
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="password_2" class="form-control" type="password"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      First name
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="first_name" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Last name
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="last_name" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Site id
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="site_id" class="form-control" type="number"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group horizontal-checkbox ">
+  
+    <label class="col-sm-2 control-label ">
+      News letter
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input type="checkbox" name="news_letter" value="true" >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Nickname
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="nickname" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Language id
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="language_id" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Registration source
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select class="form-control" name="registration_source">
+      
+      
+          
+            <option value="Google"  >Google</option>
+          
+      
+          
+            <option value="Facebook"  >Facebook</option>
+          
+      
+          
+            <option value="Github"  >Github</option>
+          
+      
+          
+            <option value="Other"  >Other</option>
+          
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Registration activity id
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="registration_activity_id" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Address2
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="address2" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Address1
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="address1" class="form-control" type="text"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Gender
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select class="form-control" name="gender">
+      
+      
+          
+            <option value="Male"  >Male</option>
+          
+      
+          
+            <option value="Female"  >Female</option>
+          
+      
+          
+            <option value="Other"  >Other</option>
+          
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Phone2
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="phone2" class="form-control" type="number"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Phone1
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="phone1" class="form-control" type="number"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Dob
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="dob" class="form-control" type="date"   >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group horizontal-checkbox ">
+  
+    <label class="col-sm-2 control-label ">
+      Is staff
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input type="checkbox" name="is_staff" value="true" >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group horizontal-checkbox ">
+  
+    <label class="col-sm-2 control-label ">
+      Is active
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input type="checkbox" name="is_active" value="true" >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    
+
+
+
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Answers
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select multiple disabled class="form-control" name="answers">
+      
+          <option>No items to select.</option>
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+
+                              <div class="form-actions">
+                                <button class="btn btn-primary" title="Make a POST request on the User Registration Api resource">POST</button>
+                              </div>
+                            </fieldset>
+                          </form>
+                        
+                      </div>
+                    
+
+                    <div class="tab-pane" id="post-generic-content-form">
+                      
+                        <form action="/user/auth/create-user/v0/" method="POST" class="form-horizontal">
+                          <fieldset>
+                            
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" id="id__content_type" data-override="content-type" class="form-control">
+  <option value="application/json" selected>application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" id="id__content" cols="40" required data-override="content" rows="10" class="form-control">
+{
+    &quot;username&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;password_2&quot;: &quot;&quot;,
+    &quot;first_name&quot;: &quot;&quot;,
+    &quot;last_name&quot;: &quot;&quot;,
+    &quot;site_id&quot;: null,
+    &quot;news_letter&quot;: false,
+    &quot;nickname&quot;: &quot;&quot;,
+    &quot;language_id&quot;: &quot;&quot;,
+    &quot;registration_source&quot;: null,
+    &quot;registration_activity_id&quot;: &quot;&quot;,
+    &quot;address2&quot;: &quot;&quot;,
+    &quot;address1&quot;: &quot;&quot;,
+    &quot;gender&quot;: null,
+    &quot;phone2&quot;: null,
+    &quot;phone1&quot;: null,
+    &quot;dob&quot;: null,
+    &quot;is_staff&quot;: false,
+    &quot;is_active&quot;: false,
+    &quot;answers&quot;: []
+}</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary" title="Make a POST request on the User Registration Api resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+
+              
+            
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+
+    
+      <script>
+        window.drf = {
+          csrfHeaderName: "X-CSRFTOKEN",
+          csrfCookieName: "csrftoken"
+        };
+      </script>
+      <script src="/static/rest_framework/js/jquery-1.12.4.min.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.js"></script>
+      <script src="/static/rest_framework/js/csrf.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.js"></script>
+      <script src="/static/rest_framework/js/default.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('form').ajaxForm();
+        });
+      </script>
+    
+
+  </body>
+  
+</html>

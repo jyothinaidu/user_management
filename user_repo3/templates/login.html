@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+
+
+      <title>Kraft API's</title>
+
+
+
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+
+
+
+  </head>
+
+
+<body class="container">
+  <div class="container-fluid" style="margin-top: 30px">
+    <div class="row-fluid">
+      <div class="well" style="width: 320px; margin-left: auto; margin-right: auto">
+        <div class="row-fluid">
+          <div>
+            <h3 style="margin: 0 0 20px;">Kraft User API's Authentication</h3>
+          </div>
+        </div><!-- /row fluid -->
+
+        <div class="row-fluid">
+          <div>
+            <form action="api/dashboard/" role="form" method="post">
+              <input type='hidden' name='csrfmiddlewaretoken' value='HYB4iw11r8Ijqi8IKKQPZHGPXs1IyGvFcljHfAsAWQ93jzD6Upb9pb8eeKYSwozN' />
+              <input type="hidden" name="next" value="api/users/register/" />
+
+              <div id="div_id_username" class="clearfix control-group error">
+                <div class="form-group">
+                  <label for="id_username">Username:</label>
+                  <input type="text" name="username" maxlength="100"
+                      autocapitalize="off"
+                      autocorrect="off" class="form-control textinput textInput"
+                      id="id_username" required autofocus
+                      >
+
+                    <p class="text-error">
+                      This field is required.
+                    </p>
+
+                </div>
+              </div>
+
+              <div id="div_id_password" class="clearfix control-group error">
+                <div class="form-group">
+                  <label for="id_password">Password:</label>
+                  <input type="password" name="password" maxlength="100" autocapitalize="off" autocorrect="off" class="form-control textinput textInput" id="id_password" required>
+
+                    <p class="text-error">
+                      This field is required.
+                    </p>
+
+                </div>
+              </div>
+
+
+
+              <div class="form-actions-no-box">
+                <input type="submit" name="submit" value="Log in" class="btn btn-primary form-control" id="submit-id-submit">
+              </div>
+            </form>
+          </div>
+        </div><!-- /.row-fluid -->
+      </div><!--/.well-->
+    </div><!-- /.row-fluid -->
+  </div><!-- /.container-fluid -->
+</body>
+
+</html>
